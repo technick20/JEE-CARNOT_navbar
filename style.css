@@ -10,11 +10,11 @@
 }
 
 body{
-  background: #e1ecf2;
+  background: transparent;
 }
 
 .wrapper{
-  margin: 10px;
+  margin: 0px;
 }
 
 .wrapper .top_navbar{
@@ -22,7 +22,8 @@ body{
   height: 60px;
   display: flex;
   position: fixed;
-  top: 10px;
+  top: 0px;
+  left: 0px;
 }
 
 .wrapper .top_navbar .hamburger{
@@ -30,7 +31,6 @@ body{
   height: 100%;
   background:  #09206f;
   padding: 15px 17px;
-  border-top-left-radius: 20px;
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ body{
   background-color: #C0C0C0;
 }
 .vl{
-  border-left: 2px solid #09206f ;
+  border-left: 2px solid red ;
   height: auto;
   display: inline-block;
 }
@@ -98,12 +98,13 @@ body{
 .wrapper .sidebar{
   position: fixed;
   top: 70px;
-  left: 10px;
+  left: 0px;
+  top: 60px;
   background:  #09206f;
   width: 260px;
   height: calc(100% - 80px);
-  border-bottom-left-radius: 20px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
+  height: 100vh;
 }
 
 .wrapper .sidebar ul li a{
